@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@mixin mobile{
+    @media screen and (max-width:480px) {
+        @content
+    }
+};
+
+@mixin tablet{
+    @media screen and (max-width:768px) {
+        @content
+    }
+};
+
+@mixin laptop{
+    @media screen and (max-width:1200px) {
+        @content
+    };
+}
+
+
+.Link{
+    color: white;
+}
+
+.Logo{
+    text-decoration: none;
+    color: #8a2be2;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;     
+    top: 50%;
+    h1{
+         color: blueviolet;
+    }
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
